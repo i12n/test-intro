@@ -1,9 +1,6 @@
-# React Test Utilities & ShallowRenderer
+# React Test Utilities
 
-ReactTestUtils 和 ShallowRenderer 在测试中比较常用。
-
-## ReactTestUtils
-[ReactTestUtils](https://reactjs.org/docs/test-utils.html) 为 React 测试提供一些 API, 这些 API 可以在其他测试框架中使用。
+[ReactTestUtils](https://reactjs.org/docs/test-utils.html) 在测试中比较常用，为 React 测试提供一些 API, 这些 API 可以在其他测试框架中使用。
 
 - Simulate.{eventName}(element, [eventData]): 用于模拟事件，如 click、change 等，[代码示例](https://codepen.io/anon/pen/geOzXL?editors=0111) [事件类型](https://reactjs.org/docs/events.html#keyboard-events)
 - renderIntoDocument(): 将React元素渲染到一个独立的DOM节点，需要DOM的支持
@@ -64,13 +61,8 @@ ReactTestUtils 和 ShallowRenderer 在测试中比较常用。
 4. **DOM Component** - HTML element 对应的组件
 
 
+[测试示例代码](https://codepen.io/gewenmao/pen/bMKWjb?editors=0111)
 
-## ShallowRenderer
-
-[ShallowRenderer](https://reactjs.org/docs/shallow-renderer.html) 用于单元测试渲染组件。特点如下：
-
-1. 只将当前组件渲染成虚拟 DOM 对象，所有子组件不进行渲染（单元测试不需要关注子组件）
-2. 不需要 DOM 环境 （提升了测试速度）
 
 
 
