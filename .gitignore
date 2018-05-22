@@ -1,2 +1,4 @@
-.*
-!.*gitignore
+.DS_Store
+.log
+.swp
+node_modules

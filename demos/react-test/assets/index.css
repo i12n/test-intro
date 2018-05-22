@@ -1,0 +1,29 @@
+.container span {
+  display: inline-block;
+  padding: 0 20px;
+  width: 40px;
+  height: 24px;
+  line-height: 24px;
+  color: #00a854;
+  text-align: center;
+  border: 1px solid #cfefdf;
+  border-radius: 4px;
+}
+.container button {
+  display: inline-block;
+  margin: 0 0 0 20px;
+  padding: 0;
+  width: 50px;
+  height: 24px;
+  box-sizing: content-box;
+  line-height: 24px;
+  background: #cfedf0;
+  color: #00a2ae;
+  border-radius: 4px;
+  border: 1px solid #cfedf0;
+  cursor: pointer;
+  font-weight: 500;
+}
+.container button:focus {
+  outline: none;
+}

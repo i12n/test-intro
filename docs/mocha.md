@@ -133,6 +133,13 @@ mocha init <path>
 
 这里面并没有提供断言库，需要自己去手动添加用到的断言库
 
+浏览器运行 mocha 步骤下：
+
+- mocha.setup 设置相关配置
+- 加载测试用例文件
+- mocha.run
+
+
 ## 其他
 - timeout 设置超时时间(默认 2000 ms)：
 
@@ -149,4 +156,3 @@ mocha init <path>
 	  });
 	})
 	```
-	
