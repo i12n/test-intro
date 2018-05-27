@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`+1 Component Component should render correctly 1`] = `
+<Button
+  count={1}
+  onClick={[Function]}
+>
+  <div
+    className="plus-container"
+  >
+    <span
+      className="plus-count"
+    >
+      1
+      s
+    </span>
+    <button
+      className="plus-button"
+      onClick={[Function]}
+    >
+       +1s
+    </button>
+  </div>
+</Button>
+`;
