@@ -10,7 +10,7 @@ function move(v, t) {
 
 describe('move(t: number, v: number) :number', function() {
   it('should return 12 when v = 2, t = 6', function() {
-    expect(move(2, 6)).be.equal(12);
+    expect(move(2, 6)).be.equal(13);
   });
 
 	it('should return NaN when v = 2, t is undefined', function() {

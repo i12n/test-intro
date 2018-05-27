@@ -138,6 +138,7 @@ mocha init <path>
 - mocha.setup 设置相关配置
 - 加载测试用例文件
 - mocha.run
+- html 添加标签 `<div id="mocha"></div>`
 
 
 ## 其他

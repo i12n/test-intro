@@ -1,5 +1,7 @@
 # React 测试
 
+
+
 React 提供了三种测试方法：react-dom/test-utils、react-test-render、react-test-renderer/shallow, 三种方法对应了不同的测试场景。
 
 |                             | DOM          | Event     | Snapshot | Render
