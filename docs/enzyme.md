@@ -9,11 +9,11 @@ Enzyme 提供三种[渲染模式](http://airbnb.io/enzyme/docs/api/) ：
 
 - [`shallow`](http://airbnb.io/enzyme/docs/api/shallow.html)
 
-	对单个组件做单元测试时，不需关注它的子组件，因为它的子组件也会有自己的单元测试。为了提高测试的效率，可以只对当前组件的交互进行测试，`shallow` 将父子组件进行隔离，只对当前组件进行渲染，而且不需要生成 DOM（[react-shallow-render](https://reactjs.org/docs/shallow-renderer.html)）。建议 React 组件的单元测试使用 `shallow`([whats-the-prefered-way-to-test-react-js-components](https://discuss.reactjs.org/t/whats-the-prefered-way-to-test-react-js-components/26))，花费的代价比较低。
+	对单个组件做单元测试时，不需关注它的子组件，因为它的子组件也会有自己的单元测试。为了提高测试的效率，可以只对当前组件的交互进行测试，`shallow` 将父子组件进行隔离，只对当前组件进行渲染，而且不需要生成 DOM，它是对（[react-shallow-render](https://reactjs.org/docs/shallow-renderer.html)）进行了一些封装，具体可以参考 [shallow renderer 实现](https://github.com/airbnb/enzyme/blob/3d836efc3647f22dfe5ab87518902a19e4d79f9d/packages/enzyme-adapter-react-16/src/ReactSixteenAdapter.js#L211)。建议 React 组件的单元测试使用 `shallow`([whats-the-prefered-way-to-test-react-js-components](https://discuss.reactjs.org/t/whats-the-prefered-way-to-test-react-js-components/26))，花费的代价比较低。
 	
 - [`mount`](http://airbnb.io/enzyme/docs/api/mount.html)
 
-	如果组件用例中需要使用 DOM API 或者 对组件的生命周期进行测试，这时就需要通过 `mount` 将组件整个DOM结构渲染出来（[react-test-renderer](https://reactjs.org/docs/test-renderer.html)），
+	如果组件用例中需要使用 DOM API 或者 对组件的生命周期进行测试，这时就需要通过 `mount` 将组件整个DOM结构渲染出来。它的底层事件模拟依赖了（[react-test-renderer](https://reactjs.org/docs/test-renderer.html)），具体见[源码](https://github.com/airbnb/enzyme/blob/3d836efc3647f22dfe5ab87518902a19e4d79f9d/packages/enzyme-adapter-react-16/src/ReactSixteenAdapter.js#L167)
 
 - [`render`](http://airbnb.io/enzyme/docs/api/render.html)
 	
